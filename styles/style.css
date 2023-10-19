@@ -1,10 +1,11 @@
 :root{
     --cor_fundo: #F3F5FC;
     --cor_fonte: black;
+    
 
 
-
-    --tamanho_titulo: 3rem;
+    --tamanho_fonte_titulo: 3rem;
+    --tamanho_fonte_paragrafo: 1rem;
 }
 
 *{
@@ -13,16 +14,10 @@
 }
 
 body{
-    width: 100vw;
+    /* width: 100vw; */
     background-color: var(--cor_fundo);
     color: var(--cor_fonte);
 }
-
-textarea {
-    resize: none;
-}
-
-
 
 .section_{
     display: flex;
@@ -34,13 +29,33 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 50%;
+    font-size: var(--tamanho_fonte_paragrafo);
 
 }
 
 .section_div_1_title{
-    font-size: var(--tamanho_titulo);
-   
+    font-size: var(--tamanho_fonte_titulo);
     
+    
+}
+
+.section_div_1_text{
+    resize: none;
+    border: none;
+    background-color: var(--cor_fundo);
+    font-size: 1.5rem;
+}
+
+.section_div_1_buttons{
+    display: flex;
+    gap: 10%;
+}
+
+.section_div_1_buttons_button{
+    padding: 2%;
+    border-radius: 24px;
+    width: 100%;
+    background-color: rgb(50, 50, 212);
 }
 
 .section_div_2{
