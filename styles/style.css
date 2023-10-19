@@ -1,3 +1,22 @@
+:root{
+    --cor_fundo: #F3F5FC;
+    --cor_fonte: black;
+
+
+
+    --tamanho_titulo: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    background-color: var(--cor_fundo);
+    color: var(--cor_fonte);
+}
 
 textarea {
     resize: none;
@@ -7,9 +26,26 @@ textarea {
 
 .section_{
     display: flex;
+    gap: 2%;
     
 }
 
+.section_div_1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.section_div_1_title{
+    font-size: var(--tamanho_titulo);
+   
+    
+}
+
+.section_div_2{
+    width: 50%;
+}
 
 
 
