@@ -27,7 +27,7 @@ function criptografar(){
             text_cripto += text.value[index];
         }
     }
-    // mais pra frente quero refatorar essa parte alguns sites uteis para isso: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model e https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples
+    // mais pra frente quero refatorar essa parte alguns sites uteis para isso: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model e https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
     
     // tiro a imagem e o paragrafo do display
     document.getElementById("img_output").style.display = "none";
@@ -39,7 +39,8 @@ function criptografar(){
     p_.appendChild(texto_formatado);
     
     
-    // aqui estou incluindo o elemento p com meu texto criptografado na minha div_output
+    
+    // aqui estou substituindo o elemento filho dessa div pelo nosso elemento criado que contem o texto criptografado
     document.getElementById("div_output").replaceChild(p_, document.getElementById("div_output").childNodes[0])
     text_cripto = "";  
 }
