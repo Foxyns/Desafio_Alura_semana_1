@@ -4,6 +4,8 @@
 let button_criptografar = document.getElementById("button_criptografar");
 let text = document.querySelector("textarea");
 let text_cripto = "";
+let text_criptografado = "";
+
 let a = "ai";
 let e = "enter";
 let i = "imes";
@@ -12,7 +14,7 @@ let u = "ufat";
 function criptografar(){
    
 
-    for (index=0; index<text.value.length; index++){
+    for (index=0; index < text.value.length; index++){
         if (text.value[index] == "a"){
             text_cripto += a;
         }else if(text.value[index] == "e"){
@@ -42,10 +44,38 @@ function criptografar(){
     
     // aqui estou substituindo o elemento filho dessa div pelo nosso elemento criado que contem o texto criptografado
     document.getElementById("div_output").replaceChild(p_, document.getElementById("div_output").childNodes[0])
+   
     text_cripto = "";  
+
 }
 
-
-
-
 button_criptografar.onclick = criptografar;
+
+
+
+
+
+
+
+
+let button_descriptografar = document.getElementById("button_descriptografar");
+function descriptografar(){
+    while(text.value.includes("ai")){
+        console.log('oi')
+
+    }
+
+
+    //for (index=0; index < text.value.length; index++){
+
+        //  console.log((text.value[i] == "a") && (text.value[i+1] == "i"));
+        //if((text.value.in == "a") && (text.value[i+1] == "i")){
+    
+         //  console.log((text.value.replace("ai", "a").replace("ober", "o").replace("enter", "e").replace("ims", "i").replace("ufat", "u")));
+
+      //  }
+      //  break;
+   // }
+}
+
+button_descriptografar.onclick = descriptografar;
