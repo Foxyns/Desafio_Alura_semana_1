@@ -27,10 +27,8 @@
                     apenas letras minúsculas e sem acento.
                 </label>
                 <div class="section_div_1_buttons">
-                    <input id="button_criptografar" class="section_div_1_buttons_button" type="button" value="Criptografar">
-                    <input id="button_descriptografar" class="section_div_1_buttons_button" type="button" value="descriptografar">
-                    <!-- <button class="section_div_1_buttons_button">Criptografar </button>
-                    <button class="section_div_1_buttons_button">Descriptografar</button> -->
+                    <input id="button_criptografar" class="section_div_1_buttons_button" type="button" value="Criptografar" onclick="criptografar()">
+                    <input id="button_descriptografar" class="section_div_1_buttons_button" type="button" value="descriptografar" onclick="descriptografar()">
                 </div>
 
             </div>
@@ -43,6 +41,8 @@
                 <div id="div_output" >
                     <img id="img_output" src="./assets/img.png" alt="um desenho de um pessoa ajoelhada com uma lupa olhando um diamante">
                     <p id="div_output_p">Nenhuma mensagem encontrada</p>
+                    <input id="button_copiar"  type="button" value="Copiar" onclick="copiar()">
+
                 </div>
 
             </div>
