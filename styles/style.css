@@ -105,7 +105,7 @@ body{
     width: 50%;
     margin-top: -5%;
     margin-right: 10%;
-    background-color: lightblue;
+    background-color: var(--color_background_2);
     border-radius: 30px;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -172,10 +172,21 @@ footer{
 
 
 @media (max-width: 480px) {
-    
+    .section_div_1_title{
+        font-size: 2rem;
+    }
+
     .section_div_1_buttons{
         flex-direction: column;
         column-gap: 3%;
     }
+
+    .header_menu{
+        border-radius: 5px;
+    }
+
+   
+
+    
 
 }
