@@ -125,6 +125,57 @@ body{
     background-color: var(--color_background);
 }
 
+footer{
+    width: 50%;
+    margin-left: 10%;
+    border-radius: 14px;
+    background-color: var(--color_background_2);
+    padding: 1%;
+
+}
 
 
-  
+@media (max-width: 800px) {
+    
+
+    .header_{
+        width: auto;
+        margin: 5% 4% 0 4%;
+
+    }
+
+    
+    .section_{
+        flex-direction: column;
+    }
+
+    .section_div_1{
+        width: auto;
+        margin: 5% 4% 0 4%;
+    }
+
+    .section_div_2{
+        width: auto;
+        margin: 5% 4% 5% 4%;
+    }
+
+    #img_output{
+        display: none;
+    }
+
+    footer{
+        width: auto;
+        margin: 0% 4% 5% 4%;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .section_div_1_buttons{
+        flex-direction: column;
+        column-gap: 3%;
+    }
+
+}
