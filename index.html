@@ -12,17 +12,17 @@
 <body>
     <header class="header_">
         <nav class="header_menu">
-            <a class="header_menu_style">Decodificador</a>
-            <a class="header_menu_style">Sobre mim</a>
-            <a class="header_menu_style">Curriculo</a>
+            <a class="header_menu_a">Decodificador</a>
+            <a class="header_menu_a">Sobre mim</a>
+            <a class="header_menu_a">Curriculo</a>
         </nav>        
     </header>
 
     <main class="section_">    
         <div class="section_div_1">
 
-            <h1 class="section_div_1_title">Encriptador e Desencriptador de texto</h1>
-            <p>codifique ou descodifique uma mensagem para conversar em segredo com um amigo:</p>
+            <h1 class="section_div_1_title">Codificador de textos</h1>
+            <p>Codifique ou descodifique uma mensagem para conversar em segredo com um amigo:</p>
             
             <textarea id="text_" class="section_div_1_text" name="text_" cols="100" rows="10" maxlength="2000" placeholder="Digite um texto" spellcheck="false"></textarea>
             <label for="text_">
@@ -41,9 +41,9 @@
             <script src="./scripts/script_criptografar.js"></script>
             <div id="section_div_2_output" >
                 <img id="img_output" name="img_output" src="./assets/img.png" alt="um desenho de um pessoa ajoelhada com uma lupa olhando um diamante">
-                <label for="img_output" id="div_output_p"><br>Nenhuma mensagem encontrada</label>
-                <input id="button_copiar"  type="button" value="Copiar" onclick="copiar()">
+                <label for="img_output" id="div_output_p"><br>Nenhuma mensagem encontrada<br><br></label>
             </div>
+            <input id="button_copiar"  type="button" value="Copiar" onclick="copiar()">
         </div>    
     </main>
 
