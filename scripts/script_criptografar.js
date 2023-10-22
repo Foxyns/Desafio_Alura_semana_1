@@ -37,7 +37,7 @@ function mudarMensagem(texto){
     p_.setAttribute("id", "texto_output")  
     texto_formatado = document.createTextNode(texto);
     p_.appendChild(texto_formatado); 
-    document.getElementById("div_output").replaceChild(p_, document.getElementById("div_output").childNodes[0])
+    document.getElementById("section_div_2_output").replaceChild(p_, document.getElementById("section_div_2_output").childNodes[0])
 }
 
 

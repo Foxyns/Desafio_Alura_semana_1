@@ -1,11 +1,12 @@
 :root{
-    --cor_fundo: #F3F5FC;
-    --cor_fonte: black;
+    --color_background: #F3F5FC;
+    --color_font: black;
+    --color_buttons: #2D85CC;
     
 
 
-    --tamanho_fonte_titulo: 3rem;
-    --tamanho_fonte_paragrafo: 1rem;
+    --size_font_title: 3rem;
+    --size_font_text: 1rem;
 }
 
 *{
@@ -14,9 +15,27 @@
 }
 
 body{
-    /* width: 100vw; */
-    background-color: var(--cor_fundo);
-    color: var(--cor_fonte);
+    height: 100vh;
+    background-color: var(--color_background);
+    color: var(--color_font);
+}
+
+.header_{
+    padding: 5% 0% 0% 15%;    
+}
+
+.header_menu{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: var(--color_buttons);
+    width: 50%;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.header_menu_style{
+    
 }
 
 .section_{
@@ -32,12 +51,12 @@ body{
     width: 50%;
     margin-left: 10%;
     margin-top: 5%;
-    font-size: var(--tamanho_fonte_paragrafo);
+    font-size: var(--size_font_text);
 
 }
 
 .section_div_1_title{
-    font-size: var(--tamanho_fonte_titulo);
+    font-size: var(--size_font_title);
     
     
 }
@@ -45,7 +64,7 @@ body{
 .section_div_1_text{
     resize: none;
     border: none;
-    background-color: var(--cor_fundo);
+    background-color: var(--color_background);
     font-size: 1.5rem;
 }
 
@@ -58,7 +77,7 @@ body{
     padding: 2%;
     border-radius: 24px;
     width: 100%;
-    background-color: rgb(50, 50, 212);
+    background-color: var(--color_buttons);
 }
 
 .section_div_2{
@@ -69,6 +88,10 @@ body{
     padding-top: 10%;
     text-align: center;
     height: 60vh;
+}
+
+#button_copiar{
+    background-color: var(--color_buttons);
 }
 
 

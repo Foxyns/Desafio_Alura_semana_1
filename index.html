@@ -8,53 +8,50 @@
     <link rel="stylesheet" href="./styles/style.css">
 
 </head>
+
 <body>
-    <header>
-        
+    <header class="header_">
+        <nav class="header_menu">
+            <a class="header_menu_style">Decodificador</a>
+            <a class="header_menu_style">Sobre mim</a>
+            <a class="header_menu_style">Curriculo</a>
+        </nav>        
     </header>
 
+    <main class="section_">    
+        <div class="section_div_1">
 
-    <main>
-        <section class="section_">
-            <div class="section_div_1"> 
-                <h1 class="section_div_1_title">Encriptador e Desencriptador de texto</h1>
-                <p>codifique ou descodifique uma mensagem para conversar em segredo com um amigo:</p>
-                <textarea class="section_div_1_text" name="text_" id="text_" cols="100" rows="10" maxlength="2000" placeholder="Digite um texto" spellcheck="false"></textarea>
-                
-                <label for="text_">
-                    <br>
-                    <img src="./assets/Group.png" alt="sinal de exclamação!">
-                    apenas letras minúsculas e sem acento.
-                </label>
-                <div class="section_div_1_buttons">
-                    <input id="button_criptografar" class="section_div_1_buttons_button" type="button" value="Criptografar" onclick="criptografar()">
-                    <input id="button_descriptografar" class="section_div_1_buttons_button" type="button" value="descriptografar" onclick="descriptografar()">
-                </div>
-
-            </div>
+            <h1 class="section_div_1_title">Encriptador e Desencriptador de texto</h1>
+            <p>codifique ou descodifique uma mensagem para conversar em segredo com um amigo:</p>
             
-            <div class="section_div_2">
-                <script src="./scripts/script_criptografar.js">
-                    
-                </script>
+            <textarea id="text_" class="section_div_1_text" name="text_" cols="100" rows="10" maxlength="2000" placeholder="Digite um texto" spellcheck="false"></textarea>
+            <label for="text_">
+                <br>
+                <img src="./assets/Group.png" alt="sinal de exclamação!">
+                apenas letras minúsculas e sem acento.
+            </label>
 
-                <div id="div_output" >
-                    <img id="img_output" src="./assets/img.png" alt="um desenho de um pessoa ajoelhada com uma lupa olhando um diamante">
-                    <p id="div_output_p">Nenhuma mensagem encontrada</p>
-                    <input id="button_copiar"  type="button" value="Copiar" onclick="copiar()">
-
-                </div>
-
+            <div class="section_div_1_buttons">
+                <input id="button_criptografar" class="section_div_1_buttons_button" type="button" value="Criptografar" onclick="criptografar()">
+                <input id="button_descriptografar" class="section_div_1_buttons_button" type="button" value="descriptografar" onclick="descriptografar()">
             </div>
-            
-         
-
-        </section>
+        </div>
+        
+        <div class="section_div_2">
+            <script src="./scripts/script_criptografar.js"></script>
+            <div id="section_div_2_output" >
+                <img id="img_output" name="img_output" src="./assets/img.png" alt="um desenho de um pessoa ajoelhada com uma lupa olhando um diamante">
+                <label for="img_output" id="div_output_p"><br>Nenhuma mensagem encontrada</label>
+                <input id="button_copiar"  type="button" value="Copiar" onclick="copiar()">
+            </div>
+        </div>    
     </main>
 
-
     <footer>
-        
+        <address>
+            Densenvolvido por Joarles Resende Franco
+            Email: joarles34@gmail.com
+        </address>        
     </footer>
 </body>
 </html>
