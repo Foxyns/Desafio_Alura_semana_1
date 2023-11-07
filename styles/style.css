@@ -1,8 +1,8 @@
 :root{
-    --color_background: #F3F5FC;
-    --color_background_2: lightblue;
+    --color_background: #F0DA90;
+    --color_background_2: #90B9F0;
     --color_font: black;
-    --color_buttons: #2D85CC;
+    --color_buttons: #703F0B;
     
 
 
@@ -19,9 +19,10 @@ body{
     height: 100vh;
     background-color: var(--color_background);
     color: var(--color_font);
+    box-sizing: border-box;
 }
 
-.header_{
+/* .header_{
     width: 50%;
     margin-left: 10%;
     margin-top: 5%;
@@ -40,6 +41,8 @@ body{
 
 .header_menu_a{
     padding: 1%;
+    text-decoration:none;
+    color: var(--color_font);
     
 }
 
@@ -49,12 +52,13 @@ body{
     border-radius: 150%;
 
 
-}
+} */
 
 
 .section_{
     display: flex;
     gap: 10%;
+    
     
     
 }
@@ -126,11 +130,12 @@ body{
 }
 
 footer{
-    width: 50%;
+    width: 49%;
+    margin-top: 5%;
     margin-left: 10%;
     border-radius: 14px;
     background-color: var(--color_background_2);
-    padding: 1%;
+    padding: 2%;
 
 }
 
@@ -140,7 +145,7 @@ footer{
 
     .header_{
         width: auto;
-        margin: 5% 4% 0 4%;
+        margin: 5% 4% 0% 4%;
 
     }
 
@@ -151,7 +156,7 @@ footer{
 
     .section_div_1{
         width: auto;
-        margin: 5% 4% 0 4%;
+        margin: 5% 4% 0% 4%;
     }
 
     .section_div_2{
@@ -171,7 +176,7 @@ footer{
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {    
     .section_div_1_title{
         font-size: 2rem;
     }
